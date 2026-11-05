@@ -1,11 +1,10 @@
-package myLife.Task5;
-//у нас будут "тип операции" и "сумма" и время
+package Progect.Task5;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Transaction {
-    private String operationType;//тип операции
-    private double amount;//сумма
+    private String operationType;
+    private double amount;
     private double afterBalanc;
     private LocalDateTime time;
 
@@ -28,7 +27,5 @@ public Transaction(String operationType,double amount,double afterBalanc){
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
     return "["+time.format(formatter) + "]" + operationType +" Сумма " + amount + " (Баланс: " + afterBalanc + ")" ;
-
 }
-
 }

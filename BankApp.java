@@ -1,6 +1,5 @@
 
-
-package myLife.Task5;
+package Progect.Task5;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -19,14 +18,13 @@ public class BankApp {
                 System.out.println("1 - Пополнить счет");
                 System.out.println("2 - Снять деньги");
                 System.out.println("3 - Показать историю");
-                System.out.println("4 - Вишенка на торт (Всего пополнено)");
-                System.out.println("5 - Вишенка на торт (Всего снято)");
+                System.out.println("4 - Всего пополнено");
+                System.out.println("5 - Всего снято");
                 System.out.println("6 - Сохранить историю в файл");
                 System.out.println("0 - Выход");
                 System.out.print("Ваш выбор: ");
 
-
-                int chois = scanner.nextInt();//выбор
+                int chois = scanner.nextInt();
                 if (chois == 1) {
                     System.out.println("Введите сумму для пополнения: ");
                     double amount = scanner.nextDouble();
@@ -57,14 +55,6 @@ public class BankApp {
                 System.out.println("Ошибка: нужно вводить только цифры! Попробуйте еще раз.\n");
                 scanner.nextLine();
             }
-
-
-            //bankAccount.withdraw(2000);
-            //bankAccount.withdraw(300);
-            //System.out.println("Баланс: " + bankAccount.getBalance() + " руб.");
-            //System.out.println("ИСТОРИЯ ОПЕРАЦИЙ: ");
-
-
         }
         scanner.close();
     }
